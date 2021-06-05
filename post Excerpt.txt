@@ -1,0 +1,13 @@
+Add this code in code snippet
+=========================================
+
+/**
+* Custom excerpt length.
+*
+* @link https://stackoverflow.com/a/17177847
+*
+* @param int $limit The number of words.
+*/
+function excerpt( $limit ) {
+return wp_trim_words( get_the_excerpt(), $limit );
+}
